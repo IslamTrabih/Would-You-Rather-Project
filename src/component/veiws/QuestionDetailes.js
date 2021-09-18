@@ -5,6 +5,7 @@ import UserCard from '../dashboard/UserCard'
 
 export class QuestionDetailes extends Component {
     render() {
+        // console.log(this.props)
         return (
             <div className='container'>
                 <UserCard id={this.props.id} detailed/>

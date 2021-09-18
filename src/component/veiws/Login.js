@@ -39,7 +39,9 @@ export class Login extends Component {
     handleLogin = (e)=>{
         e.preventDefault()
         this.props.dispatch(setAuthedUser(this.state.value))
-        // this.props.history.push('/')
+        if(this.props.location.pathname === '/login'){
+            this.props.history.push('/')
+        }
     }
 
 

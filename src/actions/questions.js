@@ -4,7 +4,7 @@ import {showLoading, hideLoading} from 'react-redux-loading'
 
 const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS'
 const SAVE_ANSWER = 'SAVE_ANSWER'
-const ADD_QUESTIONS = 'ADD_QUESTIONS'
+const ADD_QUESTION = 'ADD_QUESTIONS'
 
 
 const receiveQuestions =(questions)=>{
@@ -25,7 +25,7 @@ const saveAnswer = ({authUser, id, answer})=>{
 
 const addQuestion = (question)=>{
     return{
-        type: ADD_QUESTIONS,
+        type: ADD_QUESTION,
         question,
     }
 }
@@ -59,4 +59,4 @@ const handleSaveAnswer = (id, answer)=>{
 }
 
 
-export {RECEIVE_QUESTIONS, SAVE_ANSWER, ADD_QUESTIONS, receiveQuestions, handleSaveAnswer, handhleddQuestion}
+export {RECEIVE_QUESTIONS, SAVE_ANSWER, ADD_QUESTION, receiveQuestions, handleSaveAnswer, handhleddQuestion}

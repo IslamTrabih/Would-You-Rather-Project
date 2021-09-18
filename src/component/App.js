@@ -29,7 +29,7 @@ class App extends Component {
                 <Route path='/' component={Nav} />
                 <Route path='/Login' component={Login}/>
                 <Route exact path='/' component={Dashboard}/>
-                <Route path='/question/:id' component={QuestionDetailes} detailed/>
+                <Route path='/questions/:id' component={QuestionDetailes} detailed/>
                 <Route path='/add' component={NewQuestion}/>
                 <Route path='/leaderboard' component={Leaderboard}/>
                 <Route path='*/404' component={Error_404} />

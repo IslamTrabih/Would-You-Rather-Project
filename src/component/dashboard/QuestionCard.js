@@ -9,7 +9,7 @@ export class QuestionCard extends Component {
     handeleClick = (e, id)=>{
         e.preventDefault()
         // console.log('Clicked')
-        this.props.history.push(`/question/${id}`)
+        this.props.history.push(`/questions/${id}`)
     }
 
     render() {
